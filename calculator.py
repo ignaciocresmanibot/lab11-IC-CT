@@ -4,9 +4,20 @@ Calculator.py
 
 One function per operation, in order.
 """
+# https://github.com/ignaciocresmanibot/lab11-IC-CT.git
+# Partner 1: Ignacio Cresmani
+# Partner 2: Chandler Towne
 
 import math
 
+def square_root(a):
+    if a < 0:
+        raise ValueError("Cannot take the square root of a negative number")
+    return math.sqrt(a)
+
+
+def hypotenuse(a, b):
+    return math.hypot(a, b)
 
 def add(a, b):
     return a + b
